@@ -9,6 +9,10 @@ A simple Java web application that calculates an electricity bill based on unit 
 - JSP front end
 - `web.xml` configured for Tomcat 9 / Java EE servlet APIs
 
+## Screenshot
+
+![Electricity Bill Calculator](electricity-bill-screenshot.png)
+
 ## Files you should keep in git
 
 - `pom.xml`
@@ -38,19 +42,3 @@ Then from the project root run:
 
 ```bash
 mvn clean package
-```
-
-This creates a WAR file under `target/`.
-
-## How to run
-
-1. Copy the generated WAR file from `target/` into Tomcat's `webapps` folder.
-2. Start Tomcat.
-3. Open the app in a browser.
-
-If you want to run it from an IDE, import it as a Maven project and deploy it to Tomcat 9.
-
-## Notes
-
-- The app uses `javax.servlet` APIs, so Tomcat 9 is the correct runtime.
-- Do not mix this project with Tomcat 10+ unless the code is migrated to `jakarta.servlet`.
