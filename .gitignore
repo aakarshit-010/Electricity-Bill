@@ -1,0 +1,14 @@
+/.classpath
+/.project
+/.settings/
+/target/
+/apache-tomcat-9.0.100/
+/Screenshot *.png
+*.log
+*.tmp
+*.swp
+*.bak
+.DS_Store
+Thumbs.db
+*.iml
+/.idea/
