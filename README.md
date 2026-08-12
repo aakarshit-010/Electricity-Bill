@@ -1,44 +1,45 @@
 # Electricity Bill Calculator
 
-A simple Java web application that calculates an electricity bill based on unit slabs.
+A simple Java web application that calculates an electricity bill using slab-wise pricing.
 
-## What is included
+## Overview
 
-- Maven WAR project
-- Servlet controller for bill calculation
-- JSP front end
-- `web.xml` configured for Tomcat 9 / Java EE servlet APIs
+The user enters the number of electricity units consumed, and the application calculates the bill with a breakdown for each slab.
 
-## Screenshot
+## Features
 
-![Electricity Bill Calculator](electricity-bill-screenshot.png)
+- Clean JSP-based user interface
+- Servlet-based bill calculation
+- Slab-wise pricing logic
+- Responsive layout with Bootstrap styling
 
-## Files you should keep in git
+## Tech Stack
 
-- `pom.xml`
-- `src/main/java`
-- `src/main/webapp`
-- `README.md`
-- `.gitignore`
+- Java 17
+- JSP and Servlets
+- Maven
+- Tomcat 9
 
-## Files you should not commit
+## Project Structure
 
-- `.classpath`
-- `.project`
-- `.settings/`
-- `target/`
-- `apache-tomcat-9.0.100/`
-- screenshot or log files that are only local editor output
+- `src/main/java` - servlet logic
+- `src/main/webapp` - JSP pages and web resources
+- `pom.xml` - Maven build configuration
 
-## How to build
-
-You need:
-
-- JDK 17
-- Apache Maven 3.8 or newer
-- Apache Tomcat 9.x
-
-Then from the project root run:
+## Build
 
 ```bash
 mvn clean package
+```
+
+This creates a WAR file in the `target/` folder.
+
+## Run
+
+1. Deploy the WAR file to Tomcat 9.
+2. Start Tomcat.
+3. Open the application in a browser.
+
+## Note
+
+This project uses `javax.servlet` APIs, so Tomcat 9 is the right runtime.
